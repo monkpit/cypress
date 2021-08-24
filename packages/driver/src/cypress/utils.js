@@ -149,7 +149,7 @@ module.exports = {
     obj = this.normalizeObjWithLength(obj)
 
     const str = _.reduce(obj, (memo, value, key) => {
-      memo.push(`${`${key}`.toLowerCase()}: ${this.stringifyActual(value)}`)
+      memo.push(`${key}: ${this.stringifyActual(value)}`)
 
       return memo
     }, [])
